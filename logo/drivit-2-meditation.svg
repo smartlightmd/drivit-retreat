@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 176" role="img" aria-label="Drivit">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+    .wm{fill:#3A2A20;font-family:'Quicksand','Trebuchet MS',sans-serif;font-weight:600;font-size:38px;letter-spacing:2px}
+    @media (prefers-color-scheme:dark){.wm{fill:#F3E7D8}}
+  </style>
+  <g transform="translate(50,6)">
+    <circle cx="50" cy="50" r="45" fill="none" stroke="#C9A15C" stroke-width="2.5"/>
+    <circle cx="50" cy="48" r="33" fill="#E8DCC8"/>
+    <circle cx="50" cy="35" r="8" fill="#C4694A"/>
+    <path d="M50 45 C41 45 38 51 37 58 C36 64 30 67 27 72 C40 75 60 75 73 72 C70 67 64 64 63 58 C62 51 59 45 50 45Z" fill="#C4694A"/>
+    <circle cx="50" cy="57" r="3" fill="#C9A15C"/>
+  </g>
+  <text class="wm" x="100" y="152" text-anchor="middle">Drivit</text>
+</svg>

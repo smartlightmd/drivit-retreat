@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Drivit">
+  <circle cx="50" cy="50" r="45" fill="none" stroke="#C9A15C" stroke-width="2.5"/>
+  <path d="M50 71 C40 57 40 34 50 24 C60 34 60 57 50 71Z" fill="#E8DCC8" transform="rotate(-63 50 71)"/>
+  <path d="M50 71 C40 57 40 34 50 24 C60 34 60 57 50 71Z" fill="#E8DCC8" transform="rotate(63 50 71)"/>
+  <path d="M50 71 C40 57 40 34 50 24 C60 34 60 57 50 71Z" fill="#C4694A" transform="rotate(-33 50 71)"/>
+  <path d="M50 71 C40 57 40 34 50 24 C60 34 60 57 50 71Z" fill="#C4694A" transform="rotate(33 50 71)"/>
+  <path d="M50 71 C41 55 41 31 50 21 C59 31 59 55 50 71Z" fill="#B85A3E"/>
+  <circle cx="50" cy="67" r="4.5" fill="#C9A15C"/>
+</svg>
