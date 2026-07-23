@@ -1,4 +1,12 @@
 _preview/
+fotos/
 node_modules/
 .DS_Store
 Thumbs.db
+
+# never commit secrets
+*token*.txt
+*Token*.txt
+*.token
+gh.token.txt
+*.key.txt
