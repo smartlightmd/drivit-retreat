@@ -144,6 +144,13 @@ section{padding-block:clamp(64px,9vw,116px)}
 .poem .last{font-style:normal; font-family:"Unbounded",sans-serif; text-transform:uppercase; letter-spacing:.03em;
   color:var(--rose); margin-top:.5em; font-size:clamp(1.3rem,3vw,2rem)}
 
+/* ============ VIDEO ============ */
+.video-sec{text-align:center}
+.video-sec .sec-head{margin-inline:auto}
+.videowrap{display:flex; justify-content:center; margin-top:clamp(26px,4vw,40px)}
+.reel{width:min(320px,82vw); aspect-ratio:9/16; border-radius:30px; overflow:hidden; box-shadow:var(--shadow); border:6px solid var(--ink); background:#000}
+.reel video{width:100%; height:100%; object-fit:cover; display:block}
+
 /* ============ INCLUDES GRID ============ */
 .grid-cards{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px; margin-top:clamp(28px,4vw,44px)}
 .card{background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:24px 22px; box-shadow:var(--shadow-sm);
@@ -346,6 +353,23 @@ html{scroll-behavior:smooth}
         <p class="last">Vreau energie!</p>
       </div>
     </figure>
+  </div>
+</section>
+
+<!-- ===== VIDEO ===== -->
+<section id="video">
+  <div class="wrap video-sec">
+    <div class="sec-head reveal">
+      <p class="eyebrow" data-lang="ru">Атмосфера</p>
+      <p class="eyebrow" data-lang="ro">Atmosferă</p>
+      <h2 data-lang="ru">Почувствуй наш подростковый вайб 🪩</h2>
+      <h2 data-lang="ro">Simte vibe-ul nostru adolescentin 🪩</h2>
+    </div>
+    <div class="videowrap reveal">
+      <div class="reel">
+        <video src="assets/reel.mp4" poster="assets/reel.jpg" controls playsinline preload="metadata"></video>
+      </div>
+    </div>
   </div>
 </section>
 
