@@ -147,8 +147,8 @@ section{padding-block:clamp(64px,9vw,116px)}
 /* ============ VIDEO ============ */
 .video-sec{text-align:center}
 .video-sec .sec-head{margin-inline:auto}
-.videowrap{display:flex; justify-content:center; margin-top:clamp(26px,4vw,40px)}
-.reel{width:min(320px,82vw); aspect-ratio:9/16; border-radius:30px; overflow:hidden; box-shadow:var(--shadow); border:6px solid var(--ink); background:#000}
+.videowrap{display:flex; flex-wrap:wrap; gap:22px; justify-content:center; margin-top:clamp(26px,4vw,40px)}
+.reel{width:min(300px,80vw); aspect-ratio:9/16; border-radius:30px; overflow:hidden; box-shadow:var(--shadow); border:6px solid var(--ink); background:#000}
 .reel video{width:100%; height:100%; object-fit:cover; display:block}
 
 /* ============ INCLUDES GRID ============ */
@@ -368,6 +368,9 @@ html{scroll-behavior:smooth}
     <div class="videowrap reveal">
       <div class="reel">
         <video src="assets/reel.mp4" poster="assets/reel.jpg" controls playsinline preload="metadata"></video>
+      </div>
+      <div class="reel">
+        <video src="assets/reel2.mp4" poster="assets/reel2.jpg" controls playsinline preload="metadata"></video>
       </div>
     </div>
   </div>
