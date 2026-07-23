@@ -64,21 +64,23 @@ section{padding-block:clamp(60px,8vw,104px)}
 .micro{font-size:.92rem;color:var(--muted)}
 
 .topbar{background:var(--deep);color:var(--on-deep);text-align:center;font-size:.8rem;font-weight:500;padding:.62em 1em;letter-spacing:.005em}
-.hdr{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--bg) 92%,transparent);
-  -webkit-backdrop-filter:saturate(1.3) blur(14px);backdrop-filter:saturate(1.3) blur(14px);border-bottom:1px solid var(--line)}
-.hdr-in{display:flex;align-items:center;justify-content:space-between;height:64px;gap:20px}
+.hdr{position:sticky;top:0;z-index:60;padding:clamp(10px,1.6vw,16px) clamp(12px,3vw,24px) 0;pointer-events:none}
+.hdr-in{pointer-events:auto;max-width:1160px;margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:14px;
+  height:58px;padding:0 9px 0 20px;border-radius:20px;
+  background:color-mix(in srgb,var(--bg) 74%,transparent);
+  -webkit-backdrop-filter:saturate(1.5) blur(18px);backdrop-filter:saturate(1.5) blur(18px);
+  border:1px solid var(--line);box-shadow:0 14px 36px -22px rgba(43,26,34,.5)}
 .brand{font-family:var(--serif);font-weight:800;font-size:1.35rem;letter-spacing:-.03em}
 .brand .dot{color:var(--rose)}
-.nav{display:none;gap:30px;margin-inline:auto}
+.nav{display:none;gap:2px;margin-inline:auto}
 @media(min-width:940px){.nav{display:flex}}
-.nav a{font-size:.96rem;font-weight:500;color:var(--muted);position:relative;padding:.2em 0}
-.nav a:hover{color:var(--ink)}
-.nav a::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:2px;background:var(--rose);transition:width .24s cubic-bezier(.2,.7,.2,1)}
-.nav a:hover::after{width:100%}
+.nav a{font-size:.94rem;font-weight:500;color:var(--muted);padding:.5em .9em;border-radius:999px;transition:background .2s,color .2s}
+.nav a:hover{color:var(--ink);background:color-mix(in srgb,var(--rose) 13%,transparent)}
 .hdr-tools{display:flex;align-items:center;gap:14px}
 .chiptog button{font-family:var(--sans);font-weight:700;font-size:.8rem;border:0;background:transparent;color:var(--muted);cursor:pointer;padding:.3em .2em;border-bottom:2px solid transparent}
 .chiptog button[aria-pressed="true"]{color:var(--ink);border-color:var(--rose)}
-.hdr .btn{display:none;padding:.5em 1.1em;font-size:.9rem;border-radius:10px}@media(min-width:560px){.hdr .btn{display:inline-flex}}
+.hdr .btn{display:none;padding:.6em 1.3em;font-size:.9rem;border-radius:999px}@media(min-width:560px){.hdr .btn{display:inline-flex}}
+.icon-btn{border-radius:999px}.burger{border-radius:999px}
 .logo{display:inline-flex;align-items:center;gap:.5em;font-family:'Fraunces',var(--serif),serif;font-weight:600;font-size:1.5rem;letter-spacing:.2px;color:var(--ink)}
 .logo .logomark{width:1.7em;height:1.7em;flex:0 0 auto}
 .logo span{line-height:1}
@@ -227,8 +229,7 @@ html.js .reveal.in{opacity:1;transform:none}
 </head>
 <body>
 
-<div class="topbar"><div class="wrap"><span data-lang="ru">✦ Первый Drivit · всего 14 мест · ранняя цена 250 € до 27 июля</span><span data-lang="ro">✦ Primul Drivit · doar 14 locuri · preț redus 250 € până 27 iulie</span></div></div>
-<header class="hdr"><div class="wrap hdr-in">
+<header class="hdr"><div class="hdr-in">
   <a href="#top" class="logo" aria-label="Drivit"><svg class="logomark" viewBox="0 0 100 100" aria-hidden="true"><clipPath id="hl"><circle cx="50" cy="50" r="43"/></clipPath><g clip-path="url(#hl)"><rect width="100" height="100" fill="#FAF3EA"/><circle cx="50" cy="42" r="14" fill="#C9A15C"/><path d="M-4 72 C16 52 30 57 50 63 C69 57 84 52 104 72 L104 104 L-4 104Z" fill="#C4694A"/><path d="M2 82 C22 76 34 86 50 82 C67 78 80 86 98 82" fill="none" stroke="#E8DCC8" stroke-width="4" stroke-linecap="round"/></g><circle cx="50" cy="50" r="45" fill="none" stroke="#C9A15C" stroke-width="3"/></svg><span>Drivit</span></a>
   <nav class="nav" aria-label="Разделы">
     <a href="#uedesh"><span data-lang="ru">Зачем</span><span data-lang="ro">De ce</span></a>
