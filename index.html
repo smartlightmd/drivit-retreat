@@ -104,22 +104,25 @@ section{padding-block:clamp(60px,8vw,104px)}
 .mmenu a.btn{margin-top:22px;color:#fff;font-size:1.05rem;justify-content:center;width:100%;padding:.9em 1.5em}
 
 /* HERO */
-.hero{padding-block:clamp(28px,4vw,58px)}
-.hero-grid{display:grid;gap:clamp(28px,4.5vw,58px);align-items:center}
-@media(min-width:920px){.hero-grid{grid-template-columns:1.05fr .95fr}}
-.hero .kick{color:var(--rose);font-weight:700;font-size:.95rem;letter-spacing:.02em;margin-bottom:.7em}
-.hero h1 em{font-style:normal;font-weight:800;color:var(--rose)}
-.hero .sub{font-size:clamp(1.15rem,1rem+.8vw,1.5rem);color:var(--ink);margin-top:.7em;max-width:24ch;line-height:1.35}
-.hero .sub b{color:var(--rose);font-weight:700}
-.hero-meta{margin-top:1.5em;display:flex;flex-wrap:wrap;gap:.4em 1em;font-size:.98rem;color:var(--muted)}
-.hero-meta b{color:var(--ink);font-weight:700}.hero-meta .d{width:5px;height:5px;border-radius:50%;background:var(--rose);align-self:center;display:inline-block}
-.hero-cta{display:flex;flex-wrap:wrap;gap:12px 16px;margin-top:1.8em;align-items:center}
-.count{margin-top:1.3em;display:inline-flex;align-items:center;gap:.5em;font-size:.92rem;color:var(--muted);background:var(--white);border:1px solid var(--line);border-radius:999px;padding:.5em .95em}
-.count b{font-weight:700;color:var(--rose);font-variant-numeric:tabular-nums}
-.hero-fig{position:relative;margin:0}
-.hero-fig img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:16px;box-shadow:var(--shadow)}
-.hero-tag{position:absolute;left:-14px;bottom:26px;background:var(--white);border-radius:14px;padding:.65em 1em;box-shadow:var(--shadow);font-size:.84rem;line-height:1.2}
-.hero-tag b{font-family:var(--serif);font-weight:800;font-size:1.4rem;color:var(--rose);display:block}
+.hero{position:relative;min-height:90svh;display:flex;align-items:flex-end;overflow:hidden;color:#F5EFE7;padding-bottom:clamp(46px,8vh,96px)}
+.hero-bg{position:absolute;inset:0;z-index:-2;background:#20180F}
+.hero-bg video,.hero-bg .kb{width:100%;height:100%;object-fit:cover;filter:blur(10px) brightness(.6) saturate(1.08);transform:scale(1.14)}
+.hero-bg .kb{background-size:cover;background-position:center;animation:kb 26s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1.14)}to{transform:scale(1.26) translate(-2%,-2%)}}
+.hero-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(24,17,10,.4),rgba(24,17,10,.26) 42%,rgba(24,17,10,.78))}
+.hero-inner{max-width:760px;position:relative}
+.hero .kick{color:rgba(245,239,231,.82);font-weight:600;font-size:.92rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:1.1em}
+.hero h1{color:#fff;font-size:clamp(2.5rem,1.5rem+4.3vw,4.7rem);line-height:1.03;letter-spacing:-.03em;text-shadow:0 2px 40px rgba(0,0,0,.35)}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero .sub{font-size:clamp(1.12rem,1rem+.7vw,1.45rem);color:rgba(245,239,231,.9);margin-top:.85em;max-width:34ch;line-height:1.42}
+.hero .sub b{color:var(--gold);font-weight:700}
+.hero-meta{margin-top:1.6em;display:flex;flex-wrap:wrap;gap:.4em 1em;font-size:.98rem;color:rgba(245,239,231,.82)}
+.hero-meta b{color:#fff;font-weight:700}.hero-meta .d{width:5px;height:5px;border-radius:50%;background:var(--gold);align-self:center;display:inline-block}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px 16px;margin-top:2em;align-items:center}
+.hero .arrow{color:#F5EFE7}.hero .arrow:hover{color:#fff}
+.count{margin-top:1.4em;display:inline-flex;align-items:center;gap:.5em;font-size:.92rem;color:rgba(245,239,231,.85);background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.24);border-radius:999px;padding:.55em 1em;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.count b{font-weight:700;color:#fff;font-variant-numeric:tabular-nums}
+@media (prefers-reduced-motion:reduce){.hero-bg video{display:none}.hero-bg .kb{animation:none}}
 
 .trust{border-block:1px solid var(--line);background:var(--bg2)}
 .trust .wrap{display:flex;flex-wrap:wrap;gap:.6em 2em;justify-content:center;padding-block:20px;font-size:.94rem;color:var(--muted)}
@@ -266,23 +269,23 @@ html.js .reveal.in{opacity:1;transform:none}
 </div>
 
 <main id="top">
-<section class="hero"><div class="wrap hero-grid">
-  <div class="reveal">
+<section class="hero">
+  <div class="hero-bg">
+    <div class="kb" style="background-image:url('assets/place-terrace.webp')"></div>
+  </div>
+  <div class="hero-scrim"></div>
+  <div class="wrap"><div class="hero-inner">
     <p class="kick"><span data-lang="ru">Женский психологический ретрит · Кишинёв</span><span data-lang="ro">Retreat psihologic pentru femei · Chișinău</span></p>
     <h1><span data-lang="ru">Отношения со своим <em>внутренним подростком</em></span><span data-lang="ro">Relația cu propriul <em>adolescent interior</em></span></h1>
-    <p class="sub"><span data-lang="ru">3 дня, чтобы вернуть себе мечты, лёгкость и <b>драйв</b>.</span><span data-lang="ro">3 zile ca să-ți recapeți visele, ușurința și <b>energia</b>.</span></p>
+    <p class="sub"><span data-lang="ru">3 дня на берегу Днестра, чтобы вернуть себе мечты, лёгкость и <b>драйв</b>.</span><span data-lang="ro">3 zile pe malul Nistrului ca să-ți recapeți visele, ușurința și <b>energia</b>.</span></p>
     <div class="hero-meta"><span data-lang="ru"><b>19–22 августа</b></span><span data-lang="ro"><b>19–22 august</b></span><i class="d"></i><span data-lang="ru">Вадул-луй-Водэ, берег Днестра</span><span data-lang="ro">Vadul lui Vodă</span><i class="d"></i><span data-lang="ru"><b>14 мест</b></span><span data-lang="ro"><b>14 locuri</b></span></div>
     <div class="hero-cta">
       <a class="btn btn-primary" href="#uchastie"><span data-lang="ru">Занять своё место</span><span data-lang="ro">Rezervă un loc</span></a>
       <a class="arrow" href="#uedesh"><span data-lang="ru">Зачем это мне</span><span data-lang="ro">De ce am nevoie</span> →</a>
     </div>
     <div class="count"><span data-lang="ru">Ранняя цена 250 € ещё</span><span data-lang="ro">Preț redus 250 € încă</span> <b id="cd">…</b></div>
-  </div>
-  <figure class="hero-fig reveal">
-    <img src="assets/hosts-duo.webp" alt="Ведущие ретрита на природе" loading="eager">
-    <div class="hero-tag"><b>14</b><span data-lang="ru">мест · первый ретрит</span><span data-lang="ro">locuri · primul retreat</span></div>
-  </figure>
-</div></section>
+  </div></div>
+</section>
 
 <div class="trust"><div class="wrap">
   <span><b class="m">✦</b> <b data-lang="ru">Безопасное пространство</b><b data-lang="ro">Spațiu sigur</b></span>
