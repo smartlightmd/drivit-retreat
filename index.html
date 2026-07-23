@@ -9,681 +9,536 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="ДРАЙВИТ — отношения со своим внутренним подростком">
 <meta property="og:description" content="Женский психологический ретрит на берегу Днестра, 19–22 августа. Всего 14 мест.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23E23C79'/%3E%3Cg fill='%23fff' opacity='.85'%3E%3Ccircle cx='34' cy='34' r='6'/%3E%3Ccircle cx='52' cy='28' r='5'/%3E%3Ccircle cx='68' cy='40' r='6'/%3E%3Ccircle cx='40' cy='54' r='5'/%3E%3Ccircle cx='60' cy='58' r='6'/%3E%3Ccircle cx='30' cy='68' r='5'/%3E%3Ccircle cx='52' cy='72' r='5'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23C8396B'/%3E%3Cg fill='%23fff' opacity='.85'%3E%3Ccircle cx='34' cy='34' r='6'/%3E%3Ccircle cx='52' cy='28' r='5'/%3E%3Ccircle cx='68' cy='40' r='6'/%3E%3Ccircle cx='40' cy='54' r='5'/%3E%3Ccircle cx='60' cy='58' r='6'/%3E%3Ccircle cx='30' cy='68' r='5'/%3E%3Ccircle cx='52' cy='72' r='5'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400;1,600&family=Unbounded:wght@500;700;800&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add('js')</script>
 <style>
-/* ============ TOKENS ============ */
+/* ================= TOKENS ================= */
 :root{
-  --paper:#FBEDE7; --surface:#FFF7F2; --surface-2:#F6E3DB;
-  --ink:#2A0F30; --muted:#7C5867;
-  --rose:#E23C79; --rose-deep:#B7275C; --coral:#FF7E5F; --gold:#EBB13C; --river:#2E9E92;
-  --line:rgba(42,15,48,.13); --line-soft:rgba(42,15,48,.07);
-  --shadow:0 22px 55px -26px rgba(42,15,48,.42); --shadow-sm:0 8px 24px -14px rgba(42,15,48,.35);
-  --hero-a:#3A1140; --hero-b:#B7275C; --hero-c:#FF8E5C; --hero-d:#F4C25A;
-  --ph:linear-gradient(135deg,#efd7cf,#e7c6d6 55%,#dcd0ea);
-  --maxw:1120px;
+  --paper:#FAF6F0; --sand:#F0E8DB; --card:#FFFFFF;
+  --ink:#241026; --muted:#8A7280;
+  --rose:#C8396B; --rose-ink:#A62B57; --gold:#B0872F;
+  --line:rgba(36,16,38,.16); --line-soft:rgba(36,16,38,.08);
+  --shadow:0 30px 70px -40px rgba(36,16,38,.4);
+  --maxw:1200px; --col:660px;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --paper:#160A1C; --surface:#20102A; --surface-2:#2A1636;
-    --ink:#F7E9E1; --muted:#C7A7B7;
-    --rose:#FF5C93; --rose-deep:#FF7BA8; --coral:#FF9576; --gold:#F6CE6A; --river:#49B9AC;
-    --line:rgba(247,233,225,.15); --line-soft:rgba(247,233,225,.08);
-    --shadow:0 26px 64px -26px rgba(0,0,0,.7); --shadow-sm:0 10px 30px -16px rgba(0,0,0,.6);
-    --hero-a:#170A20; --hero-b:#8E1F49; --hero-c:#C85A3E; --hero-d:#C79A44;
-    --ph:linear-gradient(135deg,#33203f,#3d2140 55%,#2c2440);
+    --paper:#15101A; --sand:#1D1622; --card:#221A2A;
+    --ink:#F2E9E4; --muted:#B49FAC;
+    --rose:#EF6E99; --rose-ink:#F58CAF; --gold:#D8B65C;
+    --line:rgba(242,233,228,.18); --line-soft:rgba(242,233,228,.08);
+    --shadow:0 30px 80px -40px rgba(0,0,0,.7);
   }
 }
 :root[data-theme="dark"]{
-  --paper:#160A1C; --surface:#20102A; --surface-2:#2A1636;
-  --ink:#F7E9E1; --muted:#C7A7B7;
-  --rose:#FF5C93; --rose-deep:#FF7BA8; --coral:#FF9576; --gold:#F6CE6A; --river:#49B9AC;
-  --line:rgba(247,233,225,.15); --line-soft:rgba(247,233,225,.08);
-  --shadow:0 26px 64px -26px rgba(0,0,0,.7); --shadow-sm:0 10px 30px -16px rgba(0,0,0,.6);
-  --hero-a:#170A20; --hero-b:#8E1F49; --hero-c:#C85A3E; --hero-d:#C79A44;
-  --ph:linear-gradient(135deg,#33203f,#3d2140 55%,#2c2440);
+  --paper:#15101A; --sand:#1D1622; --card:#221A2A;
+  --ink:#F2E9E4; --muted:#B49FAC;
+  --rose:#EF6E99; --rose-ink:#F58CAF; --gold:#D8B65C;
+  --line:rgba(242,233,228,.18); --line-soft:rgba(242,233,228,.08);
+  --shadow:0 30px 80px -40px rgba(0,0,0,.7);
 }
 
-/* ============ BASE ============ */
+/* ================= BASE ================= */
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%; text-size-adjust:100%}
-body{
-  margin:0; background:var(--paper); color:var(--ink);
-  font-family:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  font-size:clamp(16px,1rem + .2vw,18px); line-height:1.6;
-  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
-  overflow-x:hidden;
-}
+html{-webkit-text-size-adjust:100%; text-size-adjust:100%; scroll-behavior:smooth}
+body{margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Golos Text",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:clamp(15.5px,.95rem + .2vw,17.5px); line-height:1.65; font-weight:400;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; overflow-x:hidden}
 img{max-width:100%; display:block}
-a{color:inherit}
-h1,h2,h3{font-family:"Spectral",Georgia,serif; font-weight:600; line-height:1.06; margin:0; text-wrap:balance; letter-spacing:-.01em}
+a{color:inherit; text-decoration:none}
+h1,h2,h3,h4{font-family:"Spectral",Georgia,serif; font-weight:400; margin:0; line-height:1.08;
+  letter-spacing:-.018em; text-wrap:balance}
 p{margin:0}
-.serif-it{font-family:"Spectral",serif; font-style:italic; font-weight:600}
-.drive{font-family:"Unbounded",system-ui,sans-serif}
+.serif{font-family:"Spectral",serif}
+.it{font-style:italic}
 
-/* language visibility: hide the inactive language only */
 html[lang="ru"] [data-lang="ro"], html[lang="ro"] [data-lang="ru"]{display:none !important}
 
-.wrap{width:100%; max-width:var(--maxw); margin-inline:auto; padding-inline:clamp(18px,5vw,40px)}
-section{padding-block:clamp(64px,9vw,116px)}
-.eyebrow{font-family:"Unbounded",sans-serif; font-weight:500; font-size:.72rem; letter-spacing:.22em; text-transform:uppercase; color:var(--rose)}
-.lead{color:var(--muted); font-size:clamp(1.05rem,1rem + .5vw,1.32rem); line-height:1.55; max-width:60ch}
+.wrap{width:100%; max-width:var(--maxw); margin-inline:auto; padding-inline:clamp(20px,5.5vw,56px)}
+section{padding-block:clamp(74px,11vw,150px)}
+.rule{border:0; border-top:1px solid var(--line-soft); margin:0}
 
-/* ============ BUTTONS ============ */
-.btn{display:inline-flex; align-items:center; gap:.5em; justify-content:center;
-  font-family:"Unbounded",sans-serif; font-weight:500; font-size:.86rem; letter-spacing:.02em;
-  padding:.95em 1.7em; border-radius:999px; border:1.5px solid transparent; cursor:pointer;
-  text-decoration:none; transition:transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease; white-space:nowrap}
-.btn:focus-visible{outline:3px solid var(--gold); outline-offset:3px}
-.btn-primary{background:linear-gradient(135deg,var(--rose),var(--coral)); color:#fff; box-shadow:0 12px 30px -12px rgba(226,60,121,.7)}
-.btn-primary:hover{transform:translateY(-2px); box-shadow:0 18px 40px -12px rgba(226,60,121,.8)}
-.btn-ghost{background:transparent; color:var(--ink); border-color:var(--line)}
-.btn-ghost:hover{border-color:var(--rose); color:var(--rose); transform:translateY(-2px)}
-.btn-lg{font-size:.98rem; padding:1.08em 2em}
+/* editorial eyebrow with running number */
+.eyebrow{display:flex; align-items:center; gap:.8em; font-size:.74rem; font-weight:600;
+  letter-spacing:.24em; text-transform:uppercase; color:var(--muted)}
+.eyebrow .n{font-family:"Spectral",serif; font-style:italic; font-weight:500; letter-spacing:0;
+  font-size:1rem; color:var(--rose)}
+.eyebrow .ln{flex:0 0 34px; height:1px; background:var(--line)}
 
-/* ============ HEADER ============ */
-.hdr{position:sticky; top:0; z-index:60; -webkit-backdrop-filter:saturate(1.4) blur(12px); backdrop-filter:saturate(1.4) blur(12px);
-  background:color-mix(in srgb, var(--paper) 82%, transparent); border-bottom:1px solid var(--line-soft)}
-.hdr-in{display:flex; align-items:center; justify-content:space-between; gap:14px; height:64px}
-.brand{font-family:"Unbounded",sans-serif; font-weight:800; font-size:1.14rem; letter-spacing:.02em;
-  background:linear-gradient(100deg,var(--rose),var(--coral) 60%,var(--gold)); -webkit-background-clip:text; background-clip:text; color:transparent; text-decoration:none}
-.hdr-tools{display:flex; align-items:center; gap:8px}
-.chiptog{display:inline-flex; border:1px solid var(--line); border-radius:999px; overflow:hidden; background:var(--surface)}
-.chiptog button{font-family:"Unbounded",sans-serif; font-weight:500; font-size:.7rem; letter-spacing:.06em;
-  border:0; background:transparent; color:var(--muted); padding:.5em .8em; cursor:pointer}
-.chiptog button[aria-pressed="true"]{background:var(--ink); color:var(--paper)}
-.icon-btn{width:38px; height:38px; border-radius:999px; border:1px solid var(--line); background:var(--surface);
-  display:grid; place-items:center; cursor:pointer; color:var(--ink); font-size:1rem}
+.lede{font-size:clamp(1.05rem,1rem + .55vw,1.34rem); line-height:1.6; color:var(--muted); max-width:var(--col); font-weight:400}
+h2.title{font-size:clamp(2rem,1.4rem + 3.4vw,3.5rem); font-weight:300; margin:.5em 0 0}
+
+/* ================= BUTTONS ================= */
+.btn{display:inline-flex; align-items:center; gap:.55em; justify-content:center; cursor:pointer;
+  font-family:"Golos Text",sans-serif; font-weight:500; font-size:.92rem; letter-spacing:.01em;
+  padding:1em 1.9em; border-radius:999px; border:1px solid transparent; transition:.22s ease}
+.btn:focus-visible{outline:2px solid var(--rose); outline-offset:3px}
+.btn-primary{background:var(--rose); color:#fff}
+.btn-primary:hover{background:var(--rose-ink); transform:translateY(-1px)}
+.btn-line{background:transparent; border-color:var(--line); color:var(--ink)}
+.btn-line:hover{border-color:var(--ink)}
+.link{display:inline-flex; align-items:center; gap:.4em; color:var(--ink); font-weight:500;
+  border-bottom:1px solid var(--rose); padding-bottom:2px; transition:.2s}
+.link:hover{color:var(--rose)}
+
+/* ================= HEADER ================= */
+.hdr{position:sticky; top:0; z-index:60; background:color-mix(in srgb,var(--paper) 86%, transparent);
+  -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px); border-bottom:1px solid var(--line-soft)}
+.hdr-in{display:flex; align-items:center; justify-content:space-between; gap:14px; height:70px}
+.brand{font-family:"Golos Text",sans-serif; font-weight:600; font-size:1.02rem; letter-spacing:.34em; padding-left:.34em}
+.hdr-tools{display:flex; align-items:center; gap:10px}
+.chiptog{display:inline-flex; gap:2px}
+.chiptog button{font-family:"Golos Text",sans-serif; font-weight:500; font-size:.72rem; letter-spacing:.12em;
+  border:0; background:transparent; color:var(--muted); padding:.4em .3em; cursor:pointer; border-bottom:1.5px solid transparent}
+.chiptog button[aria-pressed="true"]{color:var(--ink); border-color:var(--rose)}
+.icon-btn{width:34px; height:34px; border-radius:999px; border:1px solid var(--line); background:transparent;
+  display:grid; place-items:center; cursor:pointer; color:var(--ink); font-size:.95rem}
 .icon-btn:hover{border-color:var(--rose)}
-.hdr .btn{display:none}
-@media(min-width:720px){ .hdr .btn{display:inline-flex} }
+.hdr .btn{display:none; padding:.7em 1.4em; font-size:.85rem}
+@media(min-width:780px){ .hdr .btn{display:inline-flex} }
 
-/* ============ HERO ============ */
-.hero{position:relative; color:#fff; overflow:hidden; isolation:isolate;
-  background:
-    radial-gradient(120% 90% at 78% 8%, rgba(244,194,90,.45), transparent 45%),
-    radial-gradient(120% 120% at 12% 4%, rgba(255,142,92,.35), transparent 42%),
-    linear-gradient(168deg,var(--hero-a) 6%, var(--hero-b) 52%, var(--hero-c) 84%, var(--hero-d) 108%);
-  padding-block:clamp(84px,15vh,150px)}
-.hero::after{content:""; position:absolute; inset:0; z-index:-1; pointer-events:none; opacity:.5;
-  background-image:radial-gradient(circle, rgba(255,255,255,.9) 1px, transparent 1.4px);
-  background-size:26px 26px; -webkit-mask-image:radial-gradient(120% 80% at 75% 10%, #000, transparent 60%);
-  mask-image:radial-gradient(120% 80% at 75% 10%, #000, transparent 60%)}
-.hero .eyebrow{color:#ffd9c2}
-.hero h1{font-size:clamp(2.5rem,7.2vw,5.2rem); font-weight:600; margin:.28em 0 .1em; color:#fff}
-.hero .kicker{font-family:"Unbounded",sans-serif; font-weight:800; text-transform:uppercase; letter-spacing:.04em;
-  font-size:clamp(1.5rem,4.6vw,2.7rem); line-height:1;
-  background:linear-gradient(92deg,#fff,#ffd9c2 60%,#F4C25A); -webkit-background-clip:text; background-clip:text; color:transparent; margin-top:.15em}
-.hero .meta{display:flex; flex-wrap:wrap; gap:.5em 1.1em; margin:1.5em 0 .3em; font-size:.98rem; color:#ffe9dd}
-.hero .meta span{display:inline-flex; align-items:center; gap:.45em}
-.hero .dot{width:5px; height:5px; border-radius:50%; background:var(--gold); display:inline-block}
-.hero-cta{display:flex; flex-wrap:wrap; gap:12px; margin-top:1.9em}
-.hero .btn-ghost{color:#fff; border-color:rgba(255,255,255,.5)}
-.hero .btn-ghost:hover{border-color:#fff; color:#fff; background:rgba(255,255,255,.12)}
-.urgency{margin-top:1.7em; display:inline-flex; flex-wrap:wrap; align-items:center; gap:.5em .9em;
-  background:rgba(0,0,0,.24); border:1px solid rgba(255,255,255,.28); border-radius:16px; padding:.7em 1.05em; font-size:.92rem}
-.urgency b{font-family:"Unbounded",sans-serif; font-weight:700; color:#fff}
-.count{font-family:"Unbounded",sans-serif; font-weight:700; letter-spacing:.02em; color:#F4C25A; font-variant-numeric:tabular-nums}
-.hero-scroll{margin-top:2.4em; font-size:.76rem; letter-spacing:.2em; text-transform:uppercase; color:rgba(255,255,255,.7); font-family:"Unbounded",sans-serif}
+/* ================= HERO ================= */
+.hero{padding-top:clamp(40px,7vw,86px); padding-bottom:clamp(50px,8vw,96px)}
+.hero-grid{display:grid; gap:clamp(30px,5vw,64px); align-items:center}
+@media(min-width:900px){ .hero-grid{grid-template-columns:1.05fr .95fr} }
+.hero h1{font-size:clamp(2.7rem,1.6rem + 5.4vw,5.6rem); font-weight:300; margin:.36em 0 0; letter-spacing:-.025em}
+.hero .driva{font-family:"Spectral",serif; font-style:italic; font-weight:400;
+  font-size:clamp(1.3rem,1rem + 1.7vw,2.05rem); color:var(--rose); margin-top:.7em; line-height:1.35; max-width:20ch}
+.hero-meta{margin-top:1.6em; font-size:.95rem; color:var(--muted); display:flex; flex-wrap:wrap; gap:.4em .9em; align-items:center}
+.hero-meta b{color:var(--ink); font-weight:600}
+.hero-meta .sep{width:4px; height:4px; border-radius:50%; background:var(--rose); display:inline-block}
+.hero-cta{display:flex; flex-wrap:wrap; gap:14px; margin-top:2em}
+.hero-fig{position:relative}
+.hero-fig img{width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:6px; box-shadow:var(--shadow)}
+.hero-badge{position:absolute; left:-14px; bottom:26px; background:var(--paper); border:1px solid var(--line);
+  border-radius:999px; padding:.6em 1.1em; font-size:.82rem; box-shadow:var(--shadow); display:flex; gap:.5em; align-items:center}
+.hero-badge b{font-weight:600}
+.hero-badge .dot{color:var(--rose)}
 
-/* ============ GENERIC SECTION HEADS ============ */
-.sec-head{max-width:64ch}
-.sec-head h2{font-size:clamp(1.9rem,4vw,3rem); margin-top:.24em}
-.sec-head .lead{margin-top:.9em}
+/* ================= SECTION HEAD ================= */
+.shead{max-width:var(--col)}
+.shead.center{margin-inline:auto; text-align:center}
+.shead.center .eyebrow{justify-content:center}
+.shead.center .lede{margin-inline:auto}
 
-/* ============ FOR WHOM / POEM ============ */
-.forwhom{background:var(--surface)}
-.poem{position:relative; margin-top:clamp(28px,4vw,44px); padding:clamp(28px,4vw,48px);
-  border-radius:26px; background:linear-gradient(155deg,var(--surface-2),var(--surface)); border:1px solid var(--line);
-  box-shadow:var(--shadow-sm)}
-.poem::before{content:"“"; position:absolute; top:-.28em; left:.24em; font-family:"Spectral",serif; font-size:8rem; line-height:1; color:var(--rose); opacity:.22}
-.poem p{font-family:"Spectral",serif; font-style:italic; font-weight:600; font-size:clamp(1.25rem,2.6vw,1.9rem); line-height:1.4}
-.poem .last{font-style:normal; font-family:"Unbounded",sans-serif; text-transform:uppercase; letter-spacing:.03em;
-  color:var(--rose); margin-top:.5em; font-size:clamp(1.3rem,3vw,2rem)}
+/* ================= POEM ================= */
+.poem{margin-top:clamp(34px,5vw,56px); max-width:840px}
+.poem p{font-family:"Spectral",serif; font-weight:300; font-style:italic;
+  font-size:clamp(1.4rem,1rem + 2.4vw,2.5rem); line-height:1.34; letter-spacing:-.01em}
+.poem .driva{font-style:normal; color:var(--rose); display:block; margin-top:.35em}
 
-/* ============ VIDEO ============ */
-.video-sec{text-align:center}
-.video-sec .sec-head{margin-inline:auto}
-.videowrap{display:flex; flex-wrap:wrap; gap:22px; justify-content:center; margin-top:clamp(26px,4vw,40px)}
-.reel{width:min(300px,80vw); aspect-ratio:9/16; border-radius:30px; overflow:hidden; box-shadow:var(--shadow); border:6px solid var(--ink); background:#000}
+/* ================= VIDEO ================= */
+.atmos .videos{display:flex; flex-wrap:wrap; gap:clamp(16px,2.4vw,26px); justify-content:center; margin-top:clamp(34px,5vw,52px)}
+.reel{width:min(280px,74vw); aspect-ratio:9/16; border-radius:8px; overflow:hidden; background:#000;
+  box-shadow:var(--shadow); border:1px solid var(--line)}
 .reel video{width:100%; height:100%; object-fit:cover; display:block}
 
-/* ============ INCLUDES GRID ============ */
-.grid-cards{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px; margin-top:clamp(28px,4vw,44px)}
-.card{background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:24px 22px; box-shadow:var(--shadow-sm);
-  transition:transform .2s ease, box-shadow .2s ease}
-.card:hover{transform:translateY(-4px); box-shadow:var(--shadow)}
-.card .ic{width:46px; height:46px; border-radius:14px; display:grid; place-items:center; font-size:1.35rem;
-  background:linear-gradient(135deg,rgba(226,60,121,.16),rgba(255,126,95,.16)); margin-bottom:14px}
-.card h3{font-family:"Golos Text",sans-serif; font-weight:600; font-size:1.06rem; letter-spacing:0}
-.card p{color:var(--muted); font-size:.95rem; margin-top:.35em}
+/* ================= INCLUDES (editorial list) ================= */
+.incl-grid{display:grid; gap:0; margin-top:clamp(30px,4vw,48px); border-top:1px solid var(--line)}
+@media(min-width:680px){ .incl-grid{grid-template-columns:1fr 1fr} }
+.incl-item{display:grid; grid-template-columns:auto 1fr; gap:16px; padding:22px 4px; border-bottom:1px solid var(--line)}
+@media(min-width:680px){ .incl-item:nth-child(odd){border-right:1px solid var(--line); padding-right:30px} .incl-item:nth-child(even){padding-left:30px} }
+.incl-item .k{font-family:"Spectral",serif; font-style:italic; color:var(--rose); font-size:1.1rem; line-height:1.4}
+.incl-item h3{font-family:"Golos Text",sans-serif; font-weight:600; font-size:1.06rem; letter-spacing:0}
+.incl-item p{color:var(--muted); font-size:.94rem; margin-top:.25em}
 
-/* ============ PROGRAM ============ */
-.program{background:var(--surface)}
-.days{display:grid; gap:16px; margin-top:clamp(28px,4vw,44px)}
-@media(min-width:820px){ .days{grid-template-columns:repeat(3,1fr)} }
-.day{position:relative; background:var(--paper); border:1px solid var(--line); border-radius:22px; padding:26px 24px; overflow:hidden}
-.day .num{font-family:"Unbounded",sans-serif; font-weight:800; font-size:3.4rem; line-height:.9; color:transparent;
-  -webkit-text-stroke:1.5px var(--rose); opacity:.6}
-.day h3{font-size:1.35rem; margin-top:.3em}
-.day ul{list-style:none; padding:0; margin:.9em 0 0; display:grid; gap:.5em}
-.day li{position:relative; padding-left:1.3em; color:var(--muted); font-size:.96rem}
-.day li::before{content:""; position:absolute; left:0; top:.62em; width:7px; height:7px; border-radius:50%; background:var(--gold)}
-.note{margin-top:22px; font-size:.95rem; color:var(--muted); display:flex; gap:.6em; align-items:flex-start}
-.note b{color:var(--ink)}
+/* ================= PROGRAM ================= */
+.days{margin-top:clamp(34px,5vw,54px)}
+.day{display:grid; gap:6px 30px; padding:34px 0; border-top:1px solid var(--line); grid-template-columns:1fr}
+@media(min-width:760px){ .day{grid-template-columns:120px 1fr 1.1fr; align-items:start} }
+.day:last-child{border-bottom:1px solid var(--line)}
+.day .dn{font-family:"Spectral",serif; font-weight:300; font-size:clamp(2.6rem,4vw,3.6rem); line-height:.85; color:var(--rose)}
+.day h3{font-size:clamp(1.4rem,2.4vw,1.9rem); font-weight:400}
+.day ul{list-style:none; margin:0; padding:0; display:grid; gap:.5em; color:var(--muted); font-size:.98rem}
+.day li{position:relative; padding-left:1.2em}
+.day li::before{content:"—"; position:absolute; left:0; color:var(--rose)}
+.pnote{margin-top:26px; font-size:.95rem; color:var(--muted); max-width:var(--col)}
+.pnote b{color:var(--ink)}
 
-/* ============ HOSTS ============ */
-.hosts-grid{display:grid; gap:22px; margin-top:clamp(28px,4vw,44px)}
-@media(min-width:760px){ .hosts-grid{grid-template-columns:1fr 1fr} }
-.hosts-duo{max-width:520px; margin:clamp(26px,4vw,42px) auto 6px; border-radius:24px; overflow:hidden; box-shadow:var(--shadow); border:1px solid var(--line)}
-.hosts-duo img{width:100%; display:block}
-.host{display:grid; grid-template-columns:1fr; gap:10px; align-items:start;
-  background:var(--surface); border:1px solid var(--line); border-radius:22px; padding:22px; box-shadow:var(--shadow-sm)}
-.host .avatar{width:96px; height:96px; border-radius:20px; background:var(--ph); display:grid; place-items:center;
-  font-family:"Spectral",serif; font-size:1.7rem; color:#fff; text-shadow:0 1px 4px rgba(0,0,0,.25); position:relative; overflow:hidden}
-.host .avatar span{position:relative; z-index:1}
-.host h3{font-size:1.3rem}
-.host .role{color:var(--rose); font-size:.82rem; font-family:"Unbounded",sans-serif; font-weight:500; letter-spacing:.04em; margin:.3em 0 .5em}
-.host p{color:var(--muted); font-size:.93rem; line-height:1.55}
-.host .ig{display:inline-flex; align-items:center; gap:.4em; margin-top:.7em; font-size:.86rem; color:var(--ink); text-decoration:none; font-weight:500}
+/* ================= HOSTS ================= */
+.hosts-lead{display:grid; gap:clamp(28px,4vw,54px); margin-top:clamp(34px,5vw,54px)}
+@media(min-width:860px){ .hosts-lead{grid-template-columns:.9fr 1.1fr; align-items:center} }
+.hosts-lead .ph img{width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:6px; box-shadow:var(--shadow)}
+.host{padding:26px 0; border-top:1px solid var(--line)}
+.host:first-child{padding-top:0; border-top:0}
+.host h3{font-size:1.5rem; font-weight:400}
+.host .role{font-size:.76rem; letter-spacing:.16em; text-transform:uppercase; color:var(--rose); margin:.5em 0 .7em; font-weight:600}
+.host p{color:var(--muted); font-size:.96rem; line-height:1.6}
+.host .ig{display:inline-flex; gap:.4em; margin-top:.8em; font-weight:500; font-size:.9rem; border-bottom:1px solid var(--rose); padding-bottom:2px}
 .host .ig:hover{color:var(--rose)}
 
-/* ============ PLACE / GALLERY ============ */
-.place{background:var(--surface)}
-.gallery{display:grid; gap:12px; margin-top:clamp(28px,4vw,44px); grid-template-columns:repeat(2,1fr)}
-@media(min-width:760px){ .gallery{grid-template-columns:repeat(4,1fr)} }
-.shot{aspect-ratio:1/1; border-radius:18px; background:var(--ph); position:relative; overflow:hidden; border:1px solid var(--line)}
-.shot img{width:100%; height:100%; object-fit:cover; display:block}
-.shot.big{grid-column:span 2; aspect-ratio:4/3}
-@media(min-width:760px){ .shot.big{grid-row:span 2; aspect-ratio:auto} }
-.shot .ph-tag{position:absolute; inset:auto 10px 10px; font-size:.68rem; letter-spacing:.12em; text-transform:uppercase;
-  font-family:"Unbounded",sans-serif; color:rgba(42,15,48,.55); background:rgba(255,255,255,.6); padding:.35em .6em; border-radius:8px; -webkit-backdrop-filter:blur(4px); backdrop-filter:blur(4px)}
+/* ================= PLACE (photo essay) ================= */
+.essay{display:grid; gap:clamp(12px,1.6vw,20px); margin-top:clamp(34px,5vw,54px); grid-template-columns:repeat(6,1fr)}
+.essay figure{margin:0; position:relative; overflow:hidden; border-radius:6px; background:var(--sand)}
+.essay img{width:100%; height:100%; object-fit:cover; transition:transform .9s ease}
+.essay figure:hover img{transform:scale(1.04)}
+.essay .big{grid-column:span 6; aspect-ratio:16/10}
+@media(min-width:760px){ .essay .big{grid-column:span 4; grid-row:span 2; aspect-ratio:auto} }
+.essay .sm{grid-column:span 3; aspect-ratio:4/3}
+@media(min-width:760px){ .essay .sm{grid-column:span 2} }
+.essay figcaption{position:absolute; left:14px; bottom:12px; color:#fff; font-family:"Spectral",serif; font-style:italic;
+  font-size:.9rem; text-shadow:0 2px 12px rgba(0,0,0,.6)}
 
-/* ============ PRICE ============ */
-.price-wrap{display:grid; gap:26px; margin-top:clamp(28px,4vw,44px)}
-@media(min-width:900px){ .price-wrap{grid-template-columns:1.05fr .95fr; align-items:start} }
-.tiers{display:grid; gap:12px}
-.tier{display:flex; align-items:center; justify-content:space-between; gap:14px;
-  border:1px solid var(--line); border-radius:18px; padding:18px 22px; background:var(--surface)}
-.tier.active{border-color:var(--rose); box-shadow:0 0 0 3px rgba(226,60,121,.14); background:linear-gradient(120deg,rgba(226,60,121,.06),transparent)}
-.tier .when{font-size:.95rem; color:var(--muted)}
-.tier .when b{color:var(--ink)}
-.tier .amt{font-family:"Unbounded",sans-serif; font-weight:800; font-size:1.6rem; white-space:nowrap}
-.tier.active .amt{color:var(--rose)}
-.tier .tag{font-family:"Unbounded",sans-serif; font-size:.62rem; letter-spacing:.1em; text-transform:uppercase; color:#fff; background:var(--rose); padding:.35em .6em; border-radius:999px; margin-left:.6em}
-.price-card{background:linear-gradient(160deg,var(--surface-2),var(--surface)); border:1px solid var(--line); border-radius:24px; padding:clamp(24px,3vw,34px); box-shadow:var(--shadow-sm)}
-.price-card h3{font-size:1.45rem}
-.incl{list-style:none; padding:0; margin:1em 0 0; display:grid; gap:.6em}
-.incl li{position:relative; padding-left:1.7em; font-size:.96rem}
-.incl li::before{content:"✦"; position:absolute; left:0; color:var(--gold)}
-.prepay{margin-top:1.3em; padding:14px 16px; border-radius:14px; background:rgba(46,158,146,.12); border:1px solid rgba(46,158,146,.3); font-size:.92rem}
-.prepay b{color:var(--river)}
-.price-card .btn{margin-top:1.4em; width:100%}
-.seats{font-family:"Unbounded",sans-serif; font-weight:700; color:var(--rose); font-size:.9rem; margin-top:1em; text-align:center; letter-spacing:.04em}
+/* ================= PRICE ================= */
+.price{display:grid; gap:clamp(30px,5vw,64px); margin-top:clamp(34px,5vw,54px)}
+@media(min-width:880px){ .price{grid-template-columns:1fr 1fr; align-items:start} }
+.tiers{border-top:1px solid var(--line)}
+.tier{display:flex; align-items:baseline; justify-content:space-between; gap:16px; padding:22px 2px; border-bottom:1px solid var(--line)}
+.tier .w{font-size:.98rem; color:var(--muted)}
+.tier .w b{color:var(--ink); font-weight:600; font-size:1.02rem}
+.tier .a{font-family:"Spectral",serif; font-weight:300; font-size:1.9rem; white-space:nowrap}
+.tier.active .a, .tier.active .w b{color:var(--rose)}
+.tier .flag{font-size:.64rem; letter-spacing:.14em; text-transform:uppercase; color:var(--rose); font-weight:600; margin-left:.7em}
+.pcard h3{font-size:1.5rem; font-weight:400}
+.incl-list{list-style:none; margin:1em 0 0; padding:0; display:grid; gap:.7em}
+.incl-list li{position:relative; padding-left:1.5em; font-size:.98rem}
+.incl-list li::before{content:"·"; position:absolute; left:.3em; color:var(--rose); font-weight:700; font-size:1.4em; top:-.28em}
+.prepay{margin-top:1.5em; padding-top:1.2em; border-top:1px solid var(--line); font-size:.95rem; color:var(--muted)}
+.prepay b{color:var(--ink); font-weight:600}
+.pcard .btn{margin-top:1.6em; width:100%}
+.seats{margin-top:1em; font-size:.86rem; letter-spacing:.06em; color:var(--muted); text-align:center}
 
-/* ============ FAQ ============ */
-.faq-list{margin-top:clamp(28px,4vw,44px); border-top:1px solid var(--line)}
+/* ================= FAQ ================= */
+.faq{max-width:840px; margin-top:clamp(30px,4vw,48px); border-top:1px solid var(--line)}
 details{border-bottom:1px solid var(--line)}
-summary{cursor:pointer; list-style:none; padding:20px 40px 20px 0; position:relative; font-family:"Spectral",serif; font-weight:600; font-size:1.14rem}
+summary{cursor:pointer; list-style:none; padding:24px 44px 24px 0; position:relative;
+  font-family:"Spectral",serif; font-weight:400; font-size:clamp(1.15rem,2vw,1.4rem)}
 summary::-webkit-details-marker{display:none}
-summary::after{content:"+"; position:absolute; right:6px; top:50%; transform:translateY(-50%); font-family:"Unbounded",sans-serif; color:var(--rose); font-size:1.3rem; transition:transform .2s ease}
+summary::after{content:"+"; position:absolute; right:4px; top:50%; transform:translateY(-50%); color:var(--rose); font-size:1.4rem; font-weight:300}
 details[open] summary::after{content:"–"}
-details p{color:var(--muted); padding:0 0 20px; font-size:.98rem; max-width:70ch}
+details p{color:var(--muted); padding:0 0 24px; max-width:70ch}
 
-/* ============ FINAL CTA ============ */
-.final{position:relative; color:#fff; text-align:center; overflow:hidden;
-  background:radial-gradient(120% 100% at 50% 0%, rgba(244,194,90,.4), transparent 46%),
-    linear-gradient(160deg,var(--hero-a),var(--hero-b) 60%,var(--hero-c))}
-.final h2{color:#fff; font-size:clamp(2rem,5vw,3.2rem)}
-.final .lead{color:#ffe9dd; margin:1em auto 0; text-align:center}
-.final .hero-cta{justify-content:center}
-.final .btn-ghost{color:#fff; border-color:rgba(255,255,255,.5)}
-.final .btn-ghost:hover{background:rgba(255,255,255,.12); color:#fff; border-color:#fff}
-.socials{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-top:1.8em; font-family:"Unbounded",sans-serif; font-size:.85rem}
-.socials a{color:#fff; text-decoration:none; border-bottom:1px solid rgba(255,255,255,.4); padding-bottom:2px}
-.socials a:hover{border-color:#fff}
+/* ================= FINAL ================= */
+.final{background:var(--sand); text-align:center}
+.final h2{font-size:clamp(2.1rem,1.4rem + 3.6vw,3.8rem); font-weight:300}
+.final .lede{margin:1.1em auto 0; text-align:center}
+.final .hero-cta{justify-content:center; margin-top:2em}
+.socials{display:flex; gap:22px; justify-content:center; margin-top:2.2em; font-size:.9rem; color:var(--muted)}
+.socials a{border-bottom:1px solid var(--line)} .socials a:hover{color:var(--rose); border-color:var(--rose)}
 
-/* ============ FOOTER ============ */
-footer{background:var(--ink); color:color-mix(in srgb, var(--paper) 78%, transparent); padding-block:40px; font-size:.86rem}
-footer .wrap{display:flex; flex-wrap:wrap; justify-content:space-between; gap:14px; align-items:center}
-footer a{color:inherit}
+/* ================= FOOTER ================= */
+footer{border-top:1px solid var(--line-soft); padding-block:34px; font-size:.84rem; color:var(--muted)}
+footer .wrap{display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; align-items:center}
+footer .brand{color:var(--ink)}
 
-/* ============ MOBILE STICKY CTA ============ */
-.sticky-cta{position:fixed; left:0; right:0; bottom:0; z-index:70; display:flex; align-items:center; justify-content:space-between; gap:12px;
-  padding:10px 16px calc(10px + env(safe-area-inset-bottom)); background:color-mix(in srgb,var(--paper) 92%, transparent);
-  -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px); border-top:1px solid var(--line); transform:translateY(120%); transition:transform .3s ease}
-.sticky-cta.show{transform:none}
-.sticky-cta .p{font-size:.82rem; line-height:1.2; color:var(--muted)}
-.sticky-cta .p b{display:block; font-family:"Unbounded",sans-serif; color:var(--ink); font-size:1rem}
-@media(min-width:720px){ .sticky-cta{display:none} }
+/* ================= STICKY MOBILE CTA ================= */
+.sticky{position:fixed; left:0; right:0; bottom:0; z-index:70; display:flex; align-items:center; justify-content:space-between; gap:12px;
+  padding:12px 18px calc(12px + env(safe-area-inset-bottom)); background:color-mix(in srgb,var(--paper) 94%, transparent);
+  -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px); border-top:1px solid var(--line); transform:translateY(120%); transition:transform .35s ease}
+.sticky.show{transform:none}
+.sticky .p{font-size:.8rem; color:var(--muted); line-height:1.25}
+.sticky .p b{display:block; font-family:"Spectral",serif; font-weight:400; color:var(--ink); font-size:1.15rem}
+@media(min-width:780px){ .sticky{display:none} }
 
-/* ============ AMBIENT / LIGHTNESS (calm, yoga-tempo motion) ============ */
-@keyframes floatA{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(28px,-38px) scale(1.06)}}
-@keyframes floatB{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-26px,34px) scale(1.05)}}
-@keyframes breathe{0%,100%{opacity:.4}50%{opacity:.62}}
-@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
-.forwhom, .place, #chto-zhdet{position:relative; overflow:hidden}
-.forwhom>.wrap, .place>.wrap, #chto-zhdet>.wrap{position:relative; z-index:1}
-.forwhom::before, .place::before, #chto-zhdet::before{content:""; position:absolute; width:min(48vw,440px); aspect-ratio:1; border-radius:50%; filter:blur(74px); opacity:.4; pointer-events:none; z-index:0}
-.forwhom::before{top:-130px; right:-90px; background:radial-gradient(circle,var(--rose),transparent 68%); animation:floatA 27s ease-in-out infinite}
-#chto-zhdet::before{top:18%; left:-140px; background:radial-gradient(circle,var(--gold),transparent 68%); opacity:.3; animation:floatB 32s ease-in-out infinite}
-.place::before{bottom:-150px; left:-110px; background:radial-gradient(circle,var(--river),transparent 68%); animation:floatB 30s ease-in-out infinite}
-.hero::after{animation:breathe 9s ease-in-out infinite}
-.reel{animation:floaty 8s ease-in-out infinite}
-.videowrap .reel:nth-child(2){animation-delay:-4s}
-
-/* ============ REVEAL (only when JS on; content stays visible without JS) ============ */
-html.js .reveal{opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease}
+/* ================= REVEAL ================= */
+html.js .reveal{opacity:0; transform:translateY(20px); transition:opacity .9s ease, transform .9s cubic-bezier(.2,.7,.2,1)}
 html.js .reveal.in{opacity:1; transform:none}
 @media (prefers-reduced-motion: reduce){
-  .reveal{opacity:1 !important; transform:none !important; transition:none}
+  html.js .reveal{opacity:1 !important; transform:none !important; transition:none}
   *{scroll-behavior:auto !important}
-  .btn:hover,.card:hover,.host,.day{transition:none}
-  .forwhom::before,.place::before,#chto-zhdet::before,.hero::after,.reel{animation:none !important}
+  .essay img, .btn, .link{transition:none}
 }
-html{scroll-behavior:smooth}
 </style>
 </head>
 <body>
 
-<!-- ===== HEADER ===== -->
 <header class="hdr">
   <div class="wrap hdr-in">
     <a href="#top" class="brand">ДРАЙВИТ</a>
     <div class="hdr-tools">
       <div class="chiptog" role="group" aria-label="Язык / Limbă">
         <button type="button" id="lng-ru" aria-pressed="true" onclick="setLang('ru')">RU</button>
+        <span style="color:var(--line)">·</span>
         <button type="button" id="lng-ro" aria-pressed="false" onclick="setLang('ro')">RO</button>
       </div>
-      <button type="button" class="icon-btn" id="themeBtn" aria-label="Сменить тему" onclick="toggleTheme()">◐</button>
-      <a class="btn btn-primary" href="#zapis">
-        <span data-lang="ru">Забронировать</span><span data-lang="ro">Rezervă</span>
-      </a>
+      <button type="button" class="icon-btn" aria-label="Тема" onclick="toggleTheme()">◐</button>
+      <a class="btn btn-primary" href="#uchastie"><span data-lang="ru">Забронировать</span><span data-lang="ro">Rezervă</span></a>
     </div>
   </div>
 </header>
 
-<!-- ===== HERO ===== -->
 <main id="top">
+
+<!-- HERO -->
 <section class="hero">
-  <div class="wrap">
-    <p class="eyebrow" data-lang="ru">Психологический ретрит для женщин · Кишинёв</p>
-    <p class="eyebrow" data-lang="ro">Retreat psihologic pentru femei · Chișinău</p>
-
-    <h1 data-lang="ru">Отношения со своим<br>внутренним подростком</h1>
-    <h1 data-lang="ro">Relația cu propriul<br>adolescent interior</h1>
-
-    <div class="kicker" data-lang="ru">Хочу драйва!</div>
-    <div class="kicker" data-lang="ro">Vreau energie!</div>
-
-    <div class="meta">
-      <span><i class="dot"></i><span data-lang="ru">19–22 августа</span><span data-lang="ro">19–22 august</span></span>
-      <span><i class="dot"></i><span data-lang="ru">Вадул-луй-Водэ, берег Днестра</span><span data-lang="ro">Vadul lui Vodă, malul Nistrului</span></span>
-      <span><i class="dot"></i><span data-lang="ru">женщины 30–55</span><span data-lang="ro">femei 30–55</span></span>
-      <span><i class="dot"></i><span data-lang="ru">всего 14 мест</span><span data-lang="ro">doar 14 locuri</span></span>
-    </div>
-
-    <div class="hero-cta">
-      <a class="btn btn-primary btn-lg" href="#zapis">
-        <span data-lang="ru">Забронировать место</span><span data-lang="ro">Rezervă un loc</span>
-      </a>
-      <a class="btn btn-ghost btn-lg" href="#programma">
-        <span data-lang="ru">Что будет</span><span data-lang="ro">Ce te așteaptă</span>
-      </a>
-    </div>
-
-    <div class="urgency">
-      <span data-lang="ru">🔥 Ранняя цена <b>250 €</b> действует ещё</span>
-      <span data-lang="ro">🔥 Prețul redus <b>250 €</b> mai este valabil</span>
-      <span class="count" id="countdown">…</span>
-    </div>
-
-    <div class="hero-scroll" data-lang="ru">↓ листай</div>
-    <div class="hero-scroll" data-lang="ro">↓ derulează</div>
-  </div>
-</section>
-
-<!-- ===== FOR WHOM / POEM ===== -->
-<section class="forwhom" id="dlya-kogo">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <p class="eyebrow" data-lang="ru">Для кого</p>
-      <p class="eyebrow" data-lang="ro">Pentru cine</p>
-      <h2 data-lang="ru">Тебе 30–55. Снаружи — «всё как надо».<br>А внутри живёт девочка, которая мечтала громко.</h2>
-      <h2 data-lang="ro">Ai 30–55. La suprafață — „totul e în regulă”.<br>Iar înăuntru trăiește o fată care visa cu voce tare.</h2>
-      <p class="lead" data-lang="ru">Три дня в тёплой женской компании, чтобы снова услышать себя, прикоснуться к подростковой энергии и увезти домой ресурс, поддержку и яркие эмоции.</p>
-      <p class="lead" data-lang="ro">Trei zile într-o companie caldă de femei, ca să te auzi din nou, să atingi energia adolescentină și să pleci acasă cu resursă, sprijin și emoții vii.</p>
-    </div>
-
-    <figure class="poem reveal">
-      <div data-lang="ru">
-        <p>Я, взрослая женщина, хочу почувствовать себя вновь девочкой-подростком.<br>
-        Хочу услышать свои мечты. Хочу найти точку, где я их остановила.<br>
-        Хочу запустить их снова. Хочу прикоснуться к своей подростковой энергии.</p>
-        <p class="last">Хочу драйва!</p>
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <p class="eyebrow"><span data-lang="ru">Психологический ретрит для женщин · Кишинёв</span><span data-lang="ro">Retreat psihologic pentru femei · Chișinău</span></p>
+      <h1><span data-lang="ru">Отношения со своим внутренним подростком</span><span data-lang="ro">Relația cu propriul adolescent interior</span></h1>
+      <p class="driva"><span data-lang="ru">«Хочу снова услышать свои мечты. Хочу драйва.»</span><span data-lang="ro">„Vreau să-mi aud din nou visele. Vreau energie.”</span></p>
+      <div class="hero-meta">
+        <span data-lang="ru"><b>19–22 августа</b></span><span data-lang="ro"><b>19–22 august</b></span><i class="sep"></i>
+        <span data-lang="ru">Вадул-луй-Водэ, берег Днестра</span><span data-lang="ro">Vadul lui Vodă, malul Nistrului</span><i class="sep"></i>
+        <span data-lang="ru"><b>14 мест</b></span><span data-lang="ro"><b>14 locuri</b></span>
       </div>
-      <div data-lang="ro">
-        <p>Eu, femeie adultă, vreau să mă simt din nou adolescentă.<br>
-        Vreau să-mi aud visele. Vreau să găsesc punctul în care le-am oprit.<br>
-        Vreau să le repornesc. Vreau să ating energia mea adolescentină.</p>
-        <p class="last">Vreau energie!</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#uchastie"><span data-lang="ru">Забронировать место</span><span data-lang="ro">Rezervă un loc</span></a>
+        <a class="link" href="#programma"><span data-lang="ru">Что будет</span><span data-lang="ro">Ce te așteaptă</span> →</a>
       </div>
+    </div>
+    <figure class="hero-fig reveal">
+      <img src="assets/hosts-duo.webp" alt="Ведущие ретрита на природе" loading="eager">
+      <div class="hero-badge"><span class="dot">●</span><span data-lang="ru"><b>250 €</b> до 27 июля</span><span data-lang="ro"><b>250 €</b> până 27 iulie</span></div>
     </figure>
   </div>
 </section>
 
-<!-- ===== VIDEO ===== -->
-<section id="video">
-  <div class="wrap video-sec">
-    <div class="sec-head reveal">
-      <p class="eyebrow" data-lang="ru">Атмосфера</p>
-      <p class="eyebrow" data-lang="ro">Atmosferă</p>
-      <h2 data-lang="ru">Почувствуй наш подростковый вайб 🪩</h2>
-      <h2 data-lang="ro">Simte vibe-ul nostru adolescentin 🪩</h2>
+<!-- 01 ДЛЯ КОГО -->
+<hr class="rule">
+<section id="dlya-kogo">
+  <div class="wrap">
+    <div class="shead reveal">
+      <p class="eyebrow"><span class="n">01</span><span class="ln"></span><span data-lang="ru">Для кого</span><span data-lang="ro">Pentru cine</span></p>
+      <h2 class="title"><span data-lang="ru">Тебе 30–55. Снаружи — «всё как надо». А внутри живёт девочка, которая мечтала громко.</span><span data-lang="ro">Ai 30–55. La suprafață — „totul e în regulă”. Iar înăuntru trăiește o fată care visa cu voce tare.</span></h2>
+      <p class="lede" style="margin-top:1.1em"><span data-lang="ru">Три дня в тёплой женской компании, чтобы снова услышать себя, прикоснуться к подростковой энергии и увезти домой ресурс, поддержку и яркие эмоции.</span><span data-lang="ro">Trei zile într-o companie caldă de femei, ca să te auzi din nou, să atingi energia adolescentină și să pleci acasă cu resursă, sprijin și emoții vii.</span></p>
     </div>
-    <div class="videowrap reveal">
-      <div class="reel">
-        <video src="assets/reel.mp4" poster="assets/reel.jpg" controls playsinline preload="metadata"></video>
-      </div>
-      <div class="reel">
-        <video src="assets/reel2.mp4" poster="assets/reel2.jpg" controls playsinline preload="metadata"></video>
-      </div>
+    <figure class="poem reveal">
+      <div data-lang="ru"><p>Я, взрослая женщина, хочу почувствовать себя вновь девочкой-подростком. Хочу услышать свои мечты, найти точку, где я их остановила, и запустить их снова.<span class="driva">Хочу драйва.</span></p></div>
+      <div data-lang="ro"><p>Eu, femeie adultă, vreau să mă simt din nou adolescentă. Vreau să-mi aud visele, să găsesc punctul în care le-am oprit și să le repornesc.<span class="driva">Vreau energie.</span></p></div>
+    </figure>
+  </div>
+</section>
+
+<!-- АТМОСФЕРА -->
+<hr class="rule">
+<section class="atmos" id="video">
+  <div class="wrap">
+    <div class="shead center reveal">
+      <p class="eyebrow"><span class="ln"></span><span data-lang="ru">Атмосфера</span><span data-lang="ro">Atmosferă</span><span class="ln"></span></p>
+      <h2 class="title" data-lang="ru">Почувствуй наш вайб</h2>
+      <h2 class="title" data-lang="ro">Simte vibe-ul nostru</h2>
+    </div>
+    <div class="videos reveal">
+      <div class="reel"><video src="assets/reel.mp4" poster="assets/reel.jpg" controls playsinline preload="metadata"></video></div>
+      <div class="reel"><video src="assets/reel2.mp4" poster="assets/reel2.jpg" controls playsinline preload="metadata"></video></div>
     </div>
   </div>
 </section>
 
-<!-- ===== INCLUDES ===== -->
-<section id="chto-zhdet">
+<!-- 02 ЧТО ВАС ЖДЁТ -->
+<hr class="rule">
+<section id="chto">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <p class="eyebrow" data-lang="ru">Что вас ждёт</p>
-      <p class="eyebrow" data-lang="ro">Ce te așteaptă</p>
-      <h2 data-lang="ru">Три дня драйва, тепла и заботы о себе</h2>
-      <h2 data-lang="ro">Trei zile de energie, căldură și grijă de sine</h2>
+    <div class="shead reveal">
+      <p class="eyebrow"><span class="n">02</span><span class="ln"></span><span data-lang="ru">Что вас ждёт</span><span data-lang="ro">Ce te așteaptă</span></p>
+      <h2 class="title" data-lang="ru">Три дня драйва, тепла и заботы о себе</h2>
+      <h2 class="title" data-lang="ro">Trei zile de energie, căldură și grijă de sine</h2>
     </div>
-    <div class="grid-cards">
-      <div class="card reveal"><div class="ic">🧘‍♀️</div><h3 data-lang="ru">Утренняя йога</h3><h3 data-lang="ro">Yoga de dimineață</h3><p data-lang="ru">Мягкое пробуждение тела у воды.</p><p data-lang="ro">O trezire blândă a corpului, lângă apă.</p></div>
-      <div class="card reveal"><div class="ic">💜</div><h3 data-lang="ru">Женские круги</h3><h3 data-lang="ro">Cercuri de femei</h3><p data-lang="ru">Психологические практики в безопасном пространстве.</p><p data-lang="ro">Practici psihologice într-un spațiu sigur.</p></div>
-      <div class="card reveal"><div class="ic">🕯️</div><h3 data-lang="ru">Ритуалы и отдых</h3><h3 data-lang="ro">Ritualuri și odihnă</h3><p data-lang="ru">Расслабление и восстановление ресурса.</p><p data-lang="ro">Relaxare și refacerea resurselor.</p></div>
-      <div class="card reveal"><div class="ic">🪩</div><h3 data-lang="ru">Дискотека</h3><h3 data-lang="ro">Discotecă</h3><p data-lang="ru">С переодеванием в стиле подростковых лет.</p><p data-lang="ro">Cu costume în stilul adolescenței.</p></div>
-      <div class="card reveal"><div class="ic">📸</div><h3 data-lang="ru">Фотосессия</h3><h3 data-lang="ro">Ședință foto</h3><p data-lang="ru">С профессиональным фотографом.</p><p data-lang="ro">Cu un fotograf profesionist.</p></div>
-      <div class="card reveal"><div class="ic">💦</div><h3 data-lang="ru">Бассейн и джакузи</h3><h3 data-lang="ro">Piscină și jacuzzi</h3><p data-lang="ru">И расслабляющие практики у воды.</p><p data-lang="ro">Și practici de relaxare lângă apă.</p></div>
-      <div class="card reveal"><div class="ic">🍽️</div><h3 data-lang="ru">Трёхразовое питание</h3><h3 data-lang="ro">Trei mese pe zi</h3><p data-lang="ru">Тёплая домашняя атмосфера и забота.</p><p data-lang="ro">Atmosferă caldă, de casă, și grijă.</p></div>
+    <div class="incl-grid reveal">
+      <div class="incl-item"><span class="k">i</span><div><h3 data-lang="ru">Утренняя йога</h3><h3 data-lang="ro">Yoga de dimineață</h3><p data-lang="ru">Мягкое пробуждение тела у воды.</p><p data-lang="ro">O trezire blândă a corpului, lângă apă.</p></div></div>
+      <div class="incl-item"><span class="k">ii</span><div><h3 data-lang="ru">Женские круги и практики</h3><h3 data-lang="ro">Cercuri de femei și practici</h3><p data-lang="ru">Психологическая работа в безопасном пространстве.</p><p data-lang="ro">Lucru psihologic într-un spațiu sigur.</p></div></div>
+      <div class="incl-item"><span class="k">iii</span><div><h3 data-lang="ru">Ритуалы и отдых</h3><h3 data-lang="ro">Ritualuri și odihnă</h3><p data-lang="ru">Расслабление и восстановление ресурса.</p><p data-lang="ro">Relaxare și refacerea resurselor.</p></div></div>
+      <div class="incl-item"><span class="k">iv</span><div><h3 data-lang="ru">Дискотека с переодеванием</h3><h3 data-lang="ro">Discotecă cu costume</h3><p data-lang="ru">В стиле подростковых лет.</p><p data-lang="ro">În stilul adolescenței.</p></div></div>
+      <div class="incl-item"><span class="k">v</span><div><h3 data-lang="ru">Фотосессия</h3><h3 data-lang="ro">Ședință foto</h3><p data-lang="ru">С профессиональным фотографом.</p><p data-lang="ro">Cu un fotograf profesionist.</p></div></div>
+      <div class="incl-item"><span class="k">vi</span><div><h3 data-lang="ru">Бассейн, джакузи и вода</h3><h3 data-lang="ro">Piscină, jacuzzi și apă</h3><p data-lang="ru">И практики у воды. Трёхразовое питание.</p><p data-lang="ro">Și practici lângă apă. Trei mese pe zi.</p></div></div>
     </div>
   </div>
 </section>
 
-<!-- ===== PROGRAM ===== -->
-<section class="program" id="programma">
+<!-- 03 ПРОГРАММА -->
+<hr class="rule">
+<section id="programma">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <p class="eyebrow" data-lang="ru">Программа</p>
-      <p class="eyebrow" data-lang="ro">Program</p>
-      <h2 data-lang="ru">Как проходят три дня</h2>
-      <h2 data-lang="ro">Cum decurg cele trei zile</h2>
+    <div class="shead reveal">
+      <p class="eyebrow"><span class="n">03</span><span class="ln"></span><span data-lang="ru">Программа</span><span data-lang="ro">Program</span></p>
+      <h2 class="title" data-lang="ru">Как проходят три дня</h2>
+      <h2 class="title" data-lang="ro">Cum decurg cele trei zile</h2>
     </div>
     <div class="days">
       <div class="day reveal">
-        <div class="num">01</div>
-        <h3 data-lang="ru">Встреча и заземление</h3>
-        <h3 data-lang="ro">Întâlnire și ancorare</h3>
+        <div class="dn">01</div>
+        <h3 data-lang="ru">Встреча и заземление</h3><h3 data-lang="ro">Întâlnire și ancorare</h3>
         <ul data-lang="ru"><li>Заезд, знакомство</li><li>Первый женский круг</li><li>Вечер у воды</li></ul>
         <ul data-lang="ro"><li>Sosire, cunoaștere</li><li>Primul cerc de femei</li><li>Seară lângă apă</li></ul>
       </div>
       <div class="day reveal">
-        <div class="num">02</div>
-        <h3 data-lang="ru">Подростковый драйв</h3>
-        <h3 data-lang="ro">Energie adolescentină</h3>
-        <ul data-lang="ru"><li>Утренняя йога</li><li>Глубокие практики</li><li>Фотосессия</li><li>Дискотека с переодеванием</li></ul>
-        <ul data-lang="ro"><li>Yoga de dimineață</li><li>Practici profunde</li><li>Ședință foto</li><li>Discotecă cu costume</li></ul>
+        <div class="dn">02</div>
+        <h3 data-lang="ru">Подростковый драйв</h3><h3 data-lang="ro">Energie adolescentină</h3>
+        <ul data-lang="ru"><li>Утренняя йога</li><li>Глубокие практики</li><li>Фотосессия · дискотека</li></ul>
+        <ul data-lang="ro"><li>Yoga de dimineață</li><li>Practici profunde</li><li>Ședință foto · discotecă</li></ul>
       </div>
       <div class="day reveal">
-        <div class="num">03</div>
-        <h3 data-lang="ru">Мечты в движении</h3>
-        <h3 data-lang="ro">Vise în mișcare</h3>
+        <div class="dn">03</div>
+        <h3 data-lang="ru">Мечты в движении</h3><h3 data-lang="ro">Vise în mișcare</h3>
         <ul data-lang="ru"><li>Практики у воды</li><li>Интеграция опыта</li><li>Что я забираю с собой</li></ul>
         <ul data-lang="ro"><li>Practici lângă apă</li><li>Integrarea experienței</li><li>Ce iau cu mine</li></ul>
       </div>
     </div>
-    <p class="note reveal">
-      <span>📩</span>
-      <span data-lang="ru">Это черновик программы. Полное расписание по дням присылаем лично — напишите ведущим слово <b>«ПОДРОСТОК»</b>.</span>
-      <span data-lang="ro">Acesta este un program preliminar. Orarul complet îl trimitem personal — scrie-le organizatoarelor cuvântul <b>„ADOLESCENT”</b>.</span>
-    </p>
+    <p class="pnote reveal"><span data-lang="ru">Это черновик программы. Полное расписание присылаем лично — напишите ведущим слово <b>«ПОДРОСТОК»</b>.</span><span data-lang="ro">Program preliminar. Orarul complet îl trimitem personal — scrie-le cuvântul <b>„ADOLESCENT”</b>.</span></p>
   </div>
 </section>
 
-<!-- ===== HOSTS ===== -->
+<!-- 04 ВЕДУЩИЕ -->
+<hr class="rule">
 <section id="vedushie">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <p class="eyebrow" data-lang="ru">Ведущие</p>
-      <p class="eyebrow" data-lang="ro">Organizatoare</p>
-      <h2 data-lang="ru">Две женщины, два психолога, две мамы подростков</h2>
-      <h2 data-lang="ro">Două femei, două psihologe, două mame de adolescenți</h2>
+    <div class="shead reveal">
+      <p class="eyebrow"><span class="n">04</span><span class="ln"></span><span data-lang="ru">Ведущие</span><span data-lang="ro">Organizatoare</span></p>
+      <h2 class="title" data-lang="ru">Две женщины, два психолога, две мамы подростков</h2>
+      <h2 class="title" data-lang="ro">Două femei, două psihologe, două mame de adolescenți</h2>
     </div>
-    <figure class="hosts-duo reveal"><img src="assets/hosts-duo.webp" alt="Ведущие ретрита — Лина Тетюшева и Кристина Рапопорт" loading="lazy"></figure>
-    <div class="hosts-grid">
-      <article class="host reveal">
-        <div>
+    <div class="hosts-lead">
+      <figure class="ph reveal" style="margin:0"><img src="assets/hosts-duo.webp" alt="Лина Тетюшева и Кристина Рапопорт" loading="lazy"></figure>
+      <div class="reveal">
+        <article class="host">
           <h3>Лина Тетюшева</h3>
-          <p class="role" data-lang="ru">психолог · гештальт-терапевт · супервизор</p>
-          <p class="role" data-lang="ro">psiholog · terapeut gestalt · supervizor</p>
-          <p data-lang="ru">Ведёт образовательные и терапевтические группы для подростков и взрослых: отношения, границы, установки, выбор, профориентация, агрессия, опора.</p>
-          <p data-lang="ro">Conduce grupuri educaționale și terapeutice pentru adolescenți și adulți: relații, limite, convingeri, alegeri, orientare profesională, agresivitate, sprijin.</p>
-          <a class="ig" href="https://instagram.com/lina_tetiusheva.psy" target="_blank" rel="noopener">◎ @lina_tetiusheva.psy</a>
-        </div>
-      </article>
-      <article class="host reveal">
-        <div>
+          <p class="role" data-lang="ru">Психолог · гештальт-терапевт · супервизор</p><p class="role" data-lang="ro">Psiholog · terapeut gestalt · supervizor</p>
+          <p data-lang="ru">Ведёт образовательные и терапевтические группы для подростков и взрослых: отношения, границы, установки, выбор, опора.</p>
+          <p data-lang="ro">Conduce grupuri educaționale și terapeutice pentru adolescenți și adulți: relații, limite, convingeri, alegeri, sprijin.</p>
+          <a class="ig" href="https://instagram.com/lina_tetiusheva.psy" target="_blank" rel="noopener">@lina_tetiusheva.psy</a>
+        </article>
+        <article class="host">
           <h3>Кристина Рапопорт</h3>
-          <p class="role" data-lang="ru">психолог · гештальт-терапевт · организатор</p>
-          <p class="role" data-lang="ro">psiholog · terapeut gestalt · organizator</p>
+          <p class="role" data-lang="ru">Психолог · гештальт-терапевт · организатор</p><p class="role" data-lang="ro">Psiholog · terapeut gestalt · organizator</p>
           <p data-lang="ru">Практикующий психолог и гештальт-терапевт, предприниматель и руководитель, ведущая трансформационной игры «Гинезис».</p>
           <p data-lang="ro">Psiholog practician și terapeut gestalt, antreprenoare și lider, gazda jocului transformațional „Ghinezis”.</p>
-          <a class="ig" href="https://instagram.com/kristinarapoport_psy" target="_blank" rel="noopener">◎ @kristinarapoport_psy</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ===== PLACE ===== -->
-<section class="place" id="mesto">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <p class="eyebrow" data-lang="ru">Место силы</p>
-      <p class="eyebrow" data-lang="ro">Loc de putere</p>
-      <h2 data-lang="ru">Атмосферный дом на берегу Днестра</h2>
-      <h2 data-lang="ro">O casă atmosferică pe malul Nistrului</h2>
-      <p class="lead" data-lang="ru">Уединённое место с красивыми лужайками, видами на реку, бассейном и джакузи — Вадул-луй-Водэ, в 30 минутах от Кишинёва.</p>
-      <p class="lead" data-lang="ro">Un loc retras, cu peluze frumoase, priveliști spre râu, piscină și jacuzzi — Vadul lui Vodă, la 30 de minute de Chișinău.</p>
-    </div>
-    <div class="gallery reveal">
-      <div class="shot big"><img src="assets/place-terrace.webp" alt="Дощатая терраса на берегу Днестра на закате" loading="lazy"></div>
-      <div class="shot"><img src="assets/place-house.webp" alt="Атмосферный дом с садом" loading="lazy"></div>
-      <div class="shot"><img src="assets/place-jacuzzi.webp" alt="Крытая терраса для отдыха" loading="lazy"></div>
-      <div class="shot"><img src="assets/place-tub.webp" alt="Купель у воды" loading="lazy"></div>
-      <div class="shot"><img src="assets/place-room.webp" alt="Уютная комната" loading="lazy"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== PRICE / ZAPIS ===== -->
-<section id="zapis">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <p class="eyebrow" data-lang="ru">Участие</p>
-      <p class="eyebrow" data-lang="ro">Participare</p>
-      <h2 data-lang="ru">Стоимость и запись</h2>
-      <h2 data-lang="ro">Cost și înscriere</h2>
-    </div>
-    <div class="price-wrap">
-      <div class="tiers reveal">
-        <div class="tier" data-tier="early">
-          <div class="when"><b data-lang="ru">Ранняя цена</b><b data-lang="ro">Preț redus</b><br><span data-lang="ru">при записи до 27 июля</span><span data-lang="ro">la înscriere până pe 27 iulie</span></div>
-          <div class="amt">250 €</div>
-        </div>
-        <div class="tier" data-tier="mid">
-          <div class="when"><b data-lang="ru">Стандарт</b><b data-lang="ro">Standard</b><br><span data-lang="ru">до 6 августа</span><span data-lang="ro">până pe 6 august</span></div>
-          <div class="amt">300 €</div>
-        </div>
-        <div class="tier" data-tier="late">
-          <div class="when"><b data-lang="ru">Поздняя</b><b data-lang="ro">Târziu</b><br><span data-lang="ru">с 7 августа</span><span data-lang="ro">de la 7 august</span></div>
-          <div class="amt" data-lang="ru">выше</div><div class="amt" data-lang="ro">mai mult</div>
-        </div>
+          <a class="ig" href="https://instagram.com/kristinarapoport_psy" target="_blank" rel="noopener">@kristinarapoport_psy</a>
+        </article>
       </div>
+    </div>
+  </div>
+</section>
 
-      <div class="price-card reveal">
-        <h3 data-lang="ru">Что входит</h3>
-        <h3 data-lang="ro">Ce include</h3>
-        <ul class="incl">
+<!-- 05 МЕСТО -->
+<hr class="rule">
+<section id="mesto">
+  <div class="wrap">
+    <div class="shead reveal">
+      <p class="eyebrow"><span class="n">05</span><span class="ln"></span><span data-lang="ru">Место силы</span><span data-lang="ro">Loc de putere</span></p>
+      <h2 class="title" data-lang="ru">Атмосферный дом на берегу Днестра</h2>
+      <h2 class="title" data-lang="ro">O casă atmosferică pe malul Nistrului</h2>
+      <p class="lede" style="margin-top:1.1em"><span data-lang="ru">Уединённое место с лужайками, видами на реку, бассейном и джакузи — Вадул-луй-Водэ, в 30 минутах от Кишинёва.</span><span data-lang="ro">Un loc retras cu peluze, priveliști spre râu, piscină și jacuzzi — Vadul lui Vodă, la 30 de minute de Chișinău.</span></p>
+    </div>
+    <div class="essay reveal">
+      <figure class="big"><img src="assets/place-terrace.webp" alt="Терраса на берегу Днестра" loading="lazy"><figcaption>Днестр</figcaption></figure>
+      <figure class="sm"><img src="assets/place-house.webp" alt="Дом с садом" loading="lazy"></figure>
+      <figure class="sm"><img src="assets/place-jacuzzi.webp" alt="Крытая терраса" loading="lazy"></figure>
+      <figure class="sm"><img src="assets/place-tub.webp" alt="Купель у воды" loading="lazy"></figure>
+      <figure class="sm"><img src="assets/place-room.webp" alt="Уютная комната" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 06 УЧАСТИЕ -->
+<hr class="rule">
+<section id="uchastie">
+  <div class="wrap">
+    <div class="shead reveal">
+      <p class="eyebrow"><span class="n">06</span><span class="ln"></span><span data-lang="ru">Участие</span><span data-lang="ro">Participare</span></p>
+      <h2 class="title" data-lang="ru">Стоимость и запись</h2>
+      <h2 class="title" data-lang="ro">Cost și înscriere</h2>
+    </div>
+    <div class="price">
+      <div class="tiers reveal">
+        <div class="tier" data-tier="early"><div class="w"><b data-lang="ru">Ранняя цена</b><b data-lang="ro">Preț redus</b><br><span data-lang="ru">до 27 июля</span><span data-lang="ro">până pe 27 iulie</span></div><div class="a">250 €</div></div>
+        <div class="tier" data-tier="mid"><div class="w"><b data-lang="ru">Стандарт</b><b data-lang="ro">Standard</b><br><span data-lang="ru">до 6 августа</span><span data-lang="ro">până pe 6 august</span></div><div class="a">300 €</div></div>
+        <div class="tier" data-tier="late"><div class="w"><b data-lang="ru">Поздняя</b><b data-lang="ro">Târziu</b><br><span data-lang="ru">с 7 августа</span><span data-lang="ro">de la 7 august</span></div><div class="a" data-lang="ru">выше</div><div class="a" data-lang="ro">mai mult</div></div>
+      </div>
+      <div class="pcard reveal">
+        <h3 data-lang="ru">Что входит</h3><h3 data-lang="ro">Ce include</h3>
+        <ul class="incl-list">
           <li><span data-lang="ru">Проживание в атмосферном доме</span><span data-lang="ro">Cazare într-o casă atmosferică</span></li>
           <li><span data-lang="ru">Трёхразовое питание</span><span data-lang="ro">Trei mese pe zi</span></li>
-          <li><span data-lang="ru">Все практики, йога и женские круги</span><span data-lang="ro">Toate practicile, yoga și cercurile de femei</span></li>
+          <li><span data-lang="ru">Все практики, йога и женские круги</span><span data-lang="ro">Toate practicile, yoga și cercurile</span></li>
           <li><span data-lang="ru">Фотосессия и дискотека</span><span data-lang="ro">Ședință foto și discotecă</span></li>
           <li><span data-lang="ru">Бассейн, джакузи, практики у воды</span><span data-lang="ro">Piscină, jacuzzi, practici lângă apă</span></li>
         </ul>
-        <div class="prepay">
-          <span data-lang="ru">💳 Предоплата <b>50%</b> при бронировании и <b>50%</b> в первый день.</span>
-          <span data-lang="ro">💳 Avans <b>50%</b> la rezervare și <b>50%</b> în prima zi.</span>
-        </div>
-        <a class="btn btn-primary btn-lg" href="https://docs.google.com/forms/d/e/1FAIpQLSek7jqCBRCsMAqpbUJ21CKll-flR4AmJPreAKw9EFRfr8LQxw/viewform" target="_blank" rel="noopener">
-          <span data-lang="ru">Заполнить анкету</span><span data-lang="ro">Completează formularul</span>
-        </a>
-        <div class="seats" data-lang="ru">✦ Всего 14 мест ✦ далее — беседа-знакомство и соглашение</div>
-        <div class="seats" data-lang="ro">✦ Doar 14 locuri ✦ apoi — discuție și acord</div>
+        <div class="prepay"><span data-lang="ru">Предоплата <b>50%</b> при бронировании и <b>50%</b> в первый день. Для участия: анкета → беседа-знакомство → соглашение.</span><span data-lang="ro">Avans <b>50%</b> la rezervare și <b>50%</b> în prima zi. Pentru participare: formular → discuție de cunoaștere → acord.</span></div>
+        <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSek7jqCBRCsMAqpbUJ21CKll-flR4AmJPreAKw9EFRfr8LQxw/viewform" target="_blank" rel="noopener"><span data-lang="ru">Заполнить анкету</span><span data-lang="ro">Completează formularul</span></a>
+        <p class="seats" data-lang="ru">Всего 14 мест</p><p class="seats" data-lang="ro">Doar 14 locuri</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== FAQ ===== -->
-<section class="program" id="faq">
+<!-- FAQ -->
+<hr class="rule">
+<section id="faq">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <p class="eyebrow">FAQ</p>
-      <h2 data-lang="ru">Частые вопросы</h2>
-      <h2 data-lang="ro">Întrebări frecvente</h2>
+    <div class="shead reveal">
+      <p class="eyebrow"><span class="ln"></span>FAQ</p>
+      <h2 class="title" data-lang="ru">Частые вопросы</h2>
+      <h2 class="title" data-lang="ro">Întrebări frecvente</h2>
     </div>
-    <div class="faq-list reveal">
-      <details><summary data-lang="ru">Нужен ли опыт терапии или ретритов?</summary><summary data-lang="ro">Am nevoie de experiență în terapie sau retreaturi?</summary>
+    <div class="faq reveal">
+      <details><summary data-lang="ru">Нужен ли опыт терапии или ретритов?</summary><summary data-lang="ro">Am nevoie de experiență?</summary>
         <p data-lang="ru">Нет. Достаточно желания побыть с собой и открытости. Ведущие держат безопасное пространство для каждой.</p>
         <p data-lang="ro">Nu. Este suficientă dorința de a fi cu tine și deschiderea. Organizatoarele țin un spațiu sigur pentru fiecare.</p></details>
       <details><summary data-lang="ru">Как проходит запись?</summary><summary data-lang="ro">Cum decurge înscrierea?</summary>
-        <p data-lang="ru">Три шага: заполняете анкету → короткая беседа-знакомство с ведущими → подписываете соглашение. Место закрепляется предоплатой 50%.</p>
-        <p data-lang="ro">Trei pași: completezi formularul → o scurtă discuție de cunoaștere cu organizatoarele → semnezi acordul. Locul se confirmă cu avans de 50%.</p></details>
+        <p data-lang="ru">Три шага: анкета → короткая беседа-знакомство → подписание соглашения. Место закрепляется предоплатой 50%.</p>
+        <p data-lang="ro">Trei pași: formular → o scurtă discuție de cunoaștere → semnarea acordului. Locul se confirmă cu avans de 50%.</p></details>
       <details><summary data-lang="ru">Как добраться до Вадул-луй-Водэ?</summary><summary data-lang="ro">Cum ajung la Vadul lui Vodă?</summary>
-        <p data-lang="ru">Это ~30 минут от Кишинёва. Точный адрес и детали трансфера пришлём после записи. [уточним детали]</p>
-        <p data-lang="ro">Este la ~30 de minute de Chișinău. Adresa exactă și detaliile de transfer le trimitem după înscriere. [detalii de confirmat]</p></details>
+        <p data-lang="ru">Это ~30 минут от Кишинёва. Точный адрес и детали трансфера пришлём после записи.</p>
+        <p data-lang="ro">Este la ~30 de minute de Chișinău. Adresa exactă și transferul le trimitem după înscriere.</p></details>
       <details><summary data-lang="ru">Можно приехать с подругой?</summary><summary data-lang="ro">Pot veni cu o prietenă?</summary>
-        <p data-lang="ru">Да, конечно. Многие приезжают вдвоём — но группа всего 14 человек, поэтому места лучше бронировать заранее.</p>
-        <p data-lang="ro">Da, desigur. Multe vin în doi — dar grupul are doar 14 locuri, așa că e mai bine să rezervi din timp.</p></details>
+        <p data-lang="ru">Да. Многие приезжают вдвоём — но группа всего 14 человек, места лучше бронировать заранее.</p>
+        <p data-lang="ro">Da. Multe vin în doi — dar grupul are doar 14 locuri, e mai bine să rezervi din timp.</p></details>
     </div>
   </div>
 </section>
 
-<!-- ===== FINAL CTA ===== -->
+<!-- FINAL -->
 <section class="final" id="kontakty">
   <div class="wrap">
-    <h2 class="reveal" data-lang="ru">Ждём тебя на наш подростковый вайб 🪩</h2>
-    <h2 class="reveal" data-lang="ro">Te așteptăm la vibe-ul nostru adolescentin 🪩</h2>
-    <p class="lead reveal" data-lang="ru">Всего 14 мест. Ранняя цена 250 € — до 27 июля.</p>
-    <p class="lead reveal" data-lang="ro">Doar 14 locuri. Preț redus 250 € — până pe 27 iulie.</p>
+    <h2 class="reveal" data-lang="ru">Ждём тебя на наш подростковый вайб</h2>
+    <h2 class="reveal" data-lang="ro">Te așteptăm la vibe-ul nostru adolescentin</h2>
+    <p class="lede reveal" data-lang="ru">Всего 14 мест. Ранняя цена 250 € — до 27 июля.</p>
+    <p class="lede reveal" data-lang="ro">Doar 14 locuri. Preț redus 250 € — până pe 27 iulie.</p>
     <div class="hero-cta reveal">
-      <a class="btn btn-primary btn-lg" href="https://docs.google.com/forms/d/e/1FAIpQLSek7jqCBRCsMAqpbUJ21CKll-flR4AmJPreAKw9EFRfr8LQxw/viewform" target="_blank" rel="noopener">
-        <span data-lang="ru">Забронировать место</span><span data-lang="ro">Rezervă un loc</span>
-      </a>
-      <a class="btn btn-ghost btn-lg" href="https://ig.me/m/kristinarapoport_psy" target="_blank" rel="noopener">
-        <span data-lang="ru">Написать «ПОДРОСТОК»</span><span data-lang="ro">Scrie „ADOLESCENT”</span>
-      </a>
+      <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSek7jqCBRCsMAqpbUJ21CKll-flR4AmJPreAKw9EFRfr8LQxw/viewform" target="_blank" rel="noopener"><span data-lang="ru">Забронировать место</span><span data-lang="ro">Rezervă un loc</span></a>
+      <a class="link" href="https://ig.me/m/kristinarapoport_psy" target="_blank" rel="noopener"><span data-lang="ru">Написать «ПОДРОСТОК»</span><span data-lang="ro">Scrie „ADOLESCENT”</span> →</a>
     </div>
     <div class="socials reveal">
-      <a href="https://instagram.com/lina_tetiusheva.psy" target="_blank" rel="noopener">◎ Лина</a>
-      <a href="https://instagram.com/kristinarapoport_psy" target="_blank" rel="noopener">◎ Кристина</a>
+      <a href="https://instagram.com/lina_tetiusheva.psy" target="_blank" rel="noopener">@lina_tetiusheva.psy</a>
+      <a href="https://instagram.com/kristinarapoport_psy" target="_blank" rel="noopener">@kristinarapoport_psy</a>
     </div>
   </div>
 </section>
+
 </main>
 
 <footer>
   <div class="wrap">
-    <span class="drive">ДРАЙВИТ</span>
+    <span class="brand">ДРАЙВИТ</span>
     <span data-lang="ru">Женский психологический ретрит · Кишинёв · 2026</span>
     <span data-lang="ro">Retreat psihologic pentru femei · Chișinău · 2026</span>
   </div>
 </footer>
 
-<!-- ===== MOBILE STICKY CTA ===== -->
-<div class="sticky-cta" id="stickyCta">
-  <div class="p">
-    <b id="stickyPrice">250 €</b>
-    <span data-lang="ru">до 27 июля · 14 мест</span><span data-lang="ro">până 27 iulie · 14 locuri</span>
-  </div>
-  <a class="btn btn-primary" href="#zapis">
-    <span data-lang="ru">Записаться</span><span data-lang="ro">Înscrie-te</span>
-  </a>
+<div class="sticky" id="sticky">
+  <div class="p"><b id="stickyPrice">250 €</b><span data-lang="ru">до 27 июля · 14 мест</span><span data-lang="ro">până 27 iulie · 14 locuri</span></div>
+  <a class="btn btn-primary" href="#uchastie"><span data-lang="ru">Записаться</span><span data-lang="ro">Înscrie-te</span></a>
 </div>
 
 <script>
-/* ---- language ---- */
-function setLang(l){
-  document.documentElement.lang=l;
-  document.getElementById('lng-ru').setAttribute('aria-pressed', l==='ru');
-  document.getElementById('lng-ro').setAttribute('aria-pressed', l==='ro');
-  try{localStorage.setItem('drivit_lang',l)}catch(e){}
-}
-(function(){ try{var s=localStorage.getItem('drivit_lang'); if(s) setLang(s);}catch(e){} })();
+function setLang(l){document.documentElement.lang=l;
+  document.getElementById('lng-ru').setAttribute('aria-pressed',l==='ru');
+  document.getElementById('lng-ro').setAttribute('aria-pressed',l==='ro');
+  try{localStorage.setItem('drivit_lang',l)}catch(e){}}
+(function(){try{var s=localStorage.getItem('drivit_lang');if(s)setLang(s)}catch(e){}})();
 
-/* ---- theme ---- */
-function applyTheme(t){ if(t){document.documentElement.setAttribute('data-theme',t);} }
-function toggleTheme(){
-  var cur=document.documentElement.getAttribute('data-theme');
-  var isDark = cur ? cur==='dark' : matchMedia('(prefers-color-scheme: dark)').matches;
-  var next=isDark?'light':'dark';
-  applyTheme(next);
-  try{localStorage.setItem('drivit_theme',next)}catch(e){}
-}
-(function(){ try{var t=localStorage.getItem('drivit_theme'); if(t) applyTheme(t);}catch(e){} })();
+function applyTheme(t){if(t)document.documentElement.setAttribute('data-theme',t)}
+function toggleTheme(){var c=document.documentElement.getAttribute('data-theme');
+  var d=c?c==='dark':matchMedia('(prefers-color-scheme: dark)').matches;var n=d?'light':'dark';
+  applyTheme(n);try{localStorage.setItem('drivit_theme',n)}catch(e){}}
+(function(){try{var t=localStorage.getItem('drivit_theme');if(t)applyTheme(t)}catch(e){}})();
 
-/* ---- price stage + countdown ---- */
-var EARLY=new Date('2026-07-27T23:59:59+03:00');
-var MID=new Date('2026-08-06T23:59:59+03:00');
-function stage(now){ if(now<=EARLY) return 'early'; if(now<=MID) return 'mid'; return 'late'; }
-function markActiveTier(){
-  var st=stage(new Date());
-  document.querySelectorAll('.tier').forEach(function(t){ t.classList.toggle('active', t.dataset.tier===st); });
-  var price = st==='early' ? '250 €' : st==='mid' ? '300 €' : '—';
-  var sp=document.getElementById('stickyPrice'); if(sp) sp.textContent=price;
-}
-function tick(){
-  var el=document.getElementById('countdown'); if(!el) return;
-  var now=new Date(); var target = now<=EARLY?EARLY:(now<=MID?MID:null);
-  if(!target){ el.textContent=''; return; }
-  var d=Math.max(0,target-now); var days=Math.floor(d/864e5), h=Math.floor(d%864e5/36e5), m=Math.floor(d%36e5/6e4);
-  var ru=document.documentElement.lang!=='ro';
-  el.textContent = days+(ru?' дн ':' z ')+h+(ru?' ч ':' h ')+m+(ru?' мин':' min');
-}
-markActiveTier(); tick(); setInterval(tick,30000);
+var EARLY=new Date('2026-07-27T23:59:59+03:00'), MID=new Date('2026-08-06T23:59:59+03:00');
+(function(){var st=(new Date()<=EARLY)?'early':(new Date()<=MID)?'mid':'late';
+  document.querySelectorAll('.tier').forEach(function(t){t.classList.toggle('active',t.dataset.tier===st)});
+  var sp=document.getElementById('stickyPrice');if(sp)sp.textContent= st==='early'?'250 €':st==='mid'?'300 €':'—';})();
 
-/* ---- reveal on scroll ---- */
-(function(){
-  var els=document.querySelectorAll('.reveal');
-  if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in')}); return; }
-  var io=new IntersectionObserver(function(en){ en.forEach(function(x){ if(x.isIntersecting){ x.target.classList.add('in'); io.unobserve(x.target);} }); },{threshold:.12});
-  els.forEach(function(e){ io.observe(e); });
-})();
+(function(){var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver'in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+  els.forEach(function(e){io.observe(e)})})();
 
-/* ---- mobile sticky CTA after hero ---- */
-(function(){
-  var cta=document.getElementById('stickyCta'), hero=document.querySelector('.hero');
-  if(!cta||!hero) return;
-  var io=new IntersectionObserver(function(en){ cta.classList.toggle('show', !en[0].isIntersecting); });
-  io.observe(hero);
-})();
+(function(){var c=document.getElementById('sticky'),h=document.querySelector('.hero');if(!c||!h)return;
+  new IntersectionObserver(function(en){c.classList.toggle('show',!en[0].isIntersecting)}).observe(h)})();
 </script>
 </body>
 </html>
